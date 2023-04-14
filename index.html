@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Toggle Mode</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+
+  <body class = "body">
+    <div class="container">
+        <div class="toggle" >
+          <div class="toggle-button" onclick="animatedtoggle()">
+          </div>
+        </div>
+        <p class="text">Click on the Toggle Button
+        </p>
+        
+    </div>
+
+    <script>
+      var toggle = document.querySelector('.toggle-button');
+      var body = document.querySelector('body');
+
+      // body.classList.toggle("dark");
+
+      // function animatedtoggle(){
+      // toggle.classList.toggle("active");
+      // document.background = blue;
+      // }
+
+      toggle.addEventListener("click", ()=>{
+        body.classList.toggle("dark");
+      });
+
+      toggle.addEventListener("click", () => toggle.classList.toggle("active"));
+
+    </script>
+  </body>
+</html>
